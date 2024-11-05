@@ -3,11 +3,87 @@
   <head>
     <title>Link-in-bio</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+
+  </script>
+  <style>
+    html{
+      min-height:100%;
+    }
+   
+    /*
+    *{
+      border: red, 2px, solid
+    }
+    */
+
+    body{
+      min-height: 100%;
+      padding-bottom: 40;
+      background: linear-gradient(grey,black);
+    }
+
+    .main{
+      max-width:640px;
+      margin:auto;
+
+    }
+    .avatar{
+     width:128px;
+     height: 128px;
+     object-fit: cover;
+     border-radius: 128px;
+    }
+
+    .thumbnail{
+     width: 48px;
+     height: 48px;
+     border-radius: 48px;
+     object-fit: cover;
+    }
+
+    h1{color:white;}
+
+    a{color: white;}
+
+    .link{background-color: rgba(0,0,0,0.5);
+    margin-bottom: 20px;
+    margin-left: 300px;
+    margin-right: 300px;
+    border-radius: 1000px;
+    padding: 5px;
+    padding-right:53px;
+    display: flex;
+    align-items: center;
+    box-shadow:4px 4px 10px 0px rgba(0,0,0,0.2)
+
+    }
+
+    .profile{margin-top: 20px;
+     margin-bottom: 20px;
+      text-align:center;
+    }
+
+    .name{margin-bottom: 30px;
+      text-align:center;
+    }
+
+    .social{margin-bottom: 30px;
+            margin-left: 300px;
+    margin-right: 300px;
+    display: flex;
+    justify-content: space-around;
+    }
+
+    .linktext{text-align: center;
+      flex-grow: 1;
+    }
+  </style>
   </head>
 
   <body>
